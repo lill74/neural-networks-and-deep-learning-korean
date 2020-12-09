@@ -1,0 +1,390 @@
+
+<!doctype html>
+<html lang="kr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>About - Neural Networks and Deep Learning - Korean</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Neural Networks and Deep Learning - Korean" class="md-header-nav__button md-logo" aria-label="Neural Networks and Deep Learning - Korean">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Neural Networks and Deep Learning - Korean
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              About
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Neural Networks and Deep Learning - Korean" class="md-nav__button md-logo" aria-label="Neural Networks and Deep Learning - Korean">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Neural Networks and Deep Learning - Korean
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      About
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    이론-중심의 접근 방법
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    실습 중심의 접근 방법
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../exercises_and_problems/" class="md-nav__link">
+      Exercises and problems
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    이론-중심의 접근 방법
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    실습 중심의 접근 방법
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>About</h1>
+                
+                <p>컴퓨터의 신경망은 여지껏 발명것 에서 가장 좋은 프로그래밍 패러다임중 하나입니다.
+일반적인 프로그래밍 접근 방식에서, 우리는 컴퓨터가 쉽게 일을 처리하도록 컴퓨터에게 무엇을 해야하는지 알려주고, 큰 문제를 작은 것들로 나누고, 정교하게 작업들을 정의해줘야 했습니다. 하지만, 신경망에서는 컴퓨터에게 어떻게 문제를 해결하는지에 대해 말 해줄 필요가 없습니다. 대신에, 컴퓨터는 데이터를 관찰하는것으로 부터 학습을하고, 스스로 문제와 가장 가까운 답을 알아냅니다.</p>
+<p>데이터로부터 자동으로 학습한다는것은 좋게 들리지만, 2006년까지는 특정한 상황을 제외하고 신경망이 기존의 방식을 능가할 방법이 없었습니다. 하지만 2006년에 바뀌게 된것은 우리가 Deep Neural Network라고 부르는 기술의 발견이였습니다. 우리가 딥러닝이라고 알고있는 것이죠. 더 발전해온 오늘날 Deep Neural Network와 딥러닝은 엄청난 컴퓨터 비전, 음성인식 그리고 자연어 처리 분야에서 에서 두드러진 성능을 보여주고 있습니다. 딥러닝은 Google, Microsoft, Facebook 같은곳에서 큰 스케일로 진행되고 있습니다</p>
+<p>이 책의 목적은 여러분들이 현재 쓰이는 딥러닝의 기술을 포함해 신경망의 중요 개념에 대해 마스터하는것을 돕는것 입니다.</p>
+<p>책을 읽는 동안에 여러분은 복잡한 패턴 인식 문제를 해결하기 위해 신경망과 딥러닝을 이용한 코드를 작성하게 되고, 여러분 스스로 여러분의 문제를 해결하기 위해 신경망과 딥러닝을 사용할수 있게 될 것입니다.</p>
+<h2 id="-">이론-중심의 접근 방법</h2>
+<hr />
+<p>이 책의 목적은 여러 개념을 대충 훑고 넘어가는 것 대신, 신경망과 딥러닝의 중요 이론에 대한 견고한 이해입니다.
+여러분들이 중요 이론들에 대해 잘 이해한다면, 새로운 것들을 배울때도 빠르게 이해 할 것입니다. 프로그래밍 언어를 배울때와 비교해보자면, 새로운 언어의 중요한 문법, 라이브러리와 자료구조를 마스터한다고 생각해보세요. 여러분은 프로그래밍 언어의 일부만 알고있는것 이지만, 새로운 라이브러리와 자료구조들은 쉽고 빠르게 이해가 될것입니다.</p>
+<p>이 책은 절대로 몇몇 신경망 라이브러리에 대한 사용법에 대해 알려주지 않습니다. 만약 여러분이 라이브러리에대해 배우는것이 목적이라면, 이 책을 읽지 마세요! 만약 라이브러리를 배우는것이 목적이라면 라이브러리를 찾고 튜토리얼과 문서를 확인해보세요. 하지만 조심하세요. 이렇게 하면 결과는 바로 볼수는 있겠지만, 신경망에서 무엇이 일어나는지 이해하고 싶거나, 현재까지도 쓰이는 신경망에 대한 통찰력이 필요하다면, 유명한 라이브러리를 사용하는것으로 충분하지 않습니다. 이렇다면 여러분은 신경망 기저에 있는 오래가고, 영구적인 통찰력을 갖을 필요가 있습니다. 기술은 뜨고 지지만, 통찰력은, 영원합니다.</p>
+<h2 id="_1">실습 중심의 접근 방법</h2>
+<p>우리는 문제들을 해결하면서 신경망과 딥러닝 배경에 있는 중요 개념에 대해 알아볼 것 입니다.</p>
+<ul>
+<li>컴퓨터가 숫자 손글씨를 인식하는 예제</li>
+</ul>
+<p>이 예제는 일반적인 프로그램이 방법으로 접근하여 해결하기 아주 어려운 문제입니다. 하지만 보다시피, 십여줄의 코드와 특별한 라이브러리 없이는 간단한 신경망을 통해서도 꽤 잘 해결할수 있습니다. 거기에다 우리는 이 프로그램을 여러 시행착오를 거쳐 개선할것이고, 점차 더 많은 신경망과 딥러닝에 대한 중요 아이디어를 알게 될것입니다.</p>
+<p>이 실습은 여러분들이 프로그래밍 경험이 필요합니다. 하지만 걱정마세요 여러분이 프로페셔널한 프로그래머일 필요는 없습니다. 저는 Python (2.7 버전)으로 코드를 작성했는데, 여러분이 Python에 대해 잘 알지 못하더라도, 적은 노력으로 쉽게 이해할수 있을것입니다. 이 책에서 우리는 실험과 이해를 돕는 작은 신경망 라이브러리를 개발할것입니다. 모든 코드는 <a href="">이곳</a>에서 다운로드 받을수 있습니다. 책을 읽은 후에는, 현업에서 쓰이는 더 복잡한 신경망 라이브러리를 쉽게 이해할 것입니다.</p>
+<p>관련 주제로, 이 책을 읽기 위해 필요한 수학적 지식은 그리 많지 않습니다. 대부분의 페이지에서 제가 생각하기에 대부분의 독자들이 괜찮을법한 수학적 지식이 조금씩 있지만, 대부분 중학교 수준의 수학과 함수의 그래프 정도 입니다. 가끔 고급 수학에 대해 이야기 할수도 있지만, 여러분이 수학적 지식을 피하더라도 따라올수있도록 구성하였습니다.
+조금더 고급적수학을 많이 사용하는 2번째 장에서는 다변수 미적분과 선형대수에 대한 조금의 이해가 필요합니다. 여러분이 두가지와 친숙하지 않다면, 2번째 장에서 방향을 제시해 드리겠습니다. 그래도 너무 수학이 어렵다고 생각든다면, 페이지의 <a href="">결과</a>로 넘어가주세요. 어떤 경우에도 수학을 걱정하지 않아도 됩니다.</p>
+<p>이론과 실습 두가지를 초점으로 한 책은 별로 없습니다. 하지만 저는 신경망에 대한 기초를 세운다면, 여러분이 최상의 결과를 만들수 있을것이라고 믿습니다. 실제 코드를 개발하고, 이론을 요약하는것이 아닌 탐험과 확장을 할수 있는 코딩을 할 것입니다. 이 방법이 이론과 방법적인 여러분들의 기초에 대한 이해를 해줄것이고, 지식을 추가하는데에 도움이 될 것 입니다.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  이전
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../exercises_and_problems/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  다음
+                </span>
+                Exercises and problems
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Korean translation version of Neural Networks and Deep Learning (Micheal Nielsen)
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "search.config.lang": "en", "search.config.pipeline": " ", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\uac80\uc0c9", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
