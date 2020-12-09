@@ -1,0 +1,6 @@
+site_name: Neural Networks and Deep Learning - Korean
+copyright: Korean translation version of Neural Networks and Deep Learning (Micheal Nielsen)
+
+theme:
+  name: material
+  language: kr
